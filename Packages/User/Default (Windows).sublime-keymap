@@ -1,0 +1,34 @@
+[{
+        "keys":["f5"],
+        "caption":"SublimeREPL: save & Python - RUN current file",
+        "command":"chain",
+        "args":
+        {
+            "commands":[
+                ["save"],
+                [ "run_existing_window_command",{"id": "repl_python_run","file": "config/Python/Main.sublime-menu"}]
+            ]
+        }
+        
+    },
+    { "keys": ["f3"], 
+        "caption":"save & open chrome",
+    "command":"chain",
+"args":
+{
+    "commands":[
+        ["save"],
+        ["open_in_browser"],]
+}},
+    { 
+        "keys": ["ctrl+alt+shift+p"], 
+        "caption":"python template & save",
+        "command":"chain",       
+        "args":{"commands":[["sublime_tmpl",{"type": "python"}], ["save"]]},
+        "context":[{"key": "sublime_tmpl.python"}],
+    }
+        
+    
+  
+    
+]
